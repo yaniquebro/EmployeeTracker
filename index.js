@@ -21,10 +21,10 @@ const pool = new Pool({
   // Connect to pool and start main menu
   pool.connect((err) => {
     if (err) {
-      console.error("Error connecting to emplyees_db", err.message);
+      console.error("Error connecting to employeetracker", err.message);
       return;
     }
-    console.log("Connected to employees_db");
+    console.log("Connected to employeetracker");
     mainMenu();
   });
   
